@@ -45,3 +45,39 @@ body {
   padding: 0 16px;
   margin: 0 auto;
 }
+
+.favorites-food {
+  background: var(--White, #FEFEFE);
+}
+
+.favorites-food-title {
+  color: var(--Black, #2C2C2C);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.favorites-food-paragraph {
+  color: var(--Black, #2C2C2C);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.food-list {
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.food-list-item {
+  border-radius: 197px;
+    border: 16px solid var(--Yellow-main, #FFE550);
+    background: var(--White, #FEFEFE);
+}
