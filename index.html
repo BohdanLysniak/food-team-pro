@@ -30,5 +30,55 @@
     </main>
     <!-- footer Uliana-->
     <!-- modal Anna -->
+    <div class="modal-page-backdrop is-open">
+      <div class="modal-page-content">
+        <button type="button" class="modal-page-close-btn">
+          <svg
+            class="modal-close-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 30 32"
+          >
+            <use href="./images/icons.svg#icon-modal-page-close-btn"></use>
+          </svg>
+        </button>
+        <p class="modal-page-content-title">Order Form</p>
+        <form class="modal-page-form" name="submit-form" autocomplete="off">
+          <div class="form-item-container">
+            <label class="modal-form-label" for="user-name">Name</label>
+            <input
+              class="modal-form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Your name"
+            />
+          </div>
+          <div class="form-item-container">
+            <label class="modal-form-label" for="user-phone-number"
+              >Phone number</label
+            >
+            <input
+              class="modal-form-input"
+              type="tel"
+              name="user-phone-number"
+              id="user-phone-number"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            />
+          </div>
+          <div class="form-item-container last">
+            <label class="modal-form-label" for="user-email">E-mail</label>
+            <input
+              class="modal-form-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="example@gmail.com"
+            />
+          </div>
+          <button class="modal-form-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
