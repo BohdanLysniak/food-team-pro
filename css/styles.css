@@ -45,3 +45,66 @@ body {
   padding: 0 16px;
   margin: 0 auto;
 }
+
+/* Button */
+button {
+  font-family: inherit;
+}
+
+.hero-button {
+  display: block;
+  width: 98px;
+  height: 32px;
+  border-radius: 30px;
+  border: none;
+  background-color: #bbf330;
+  color: #2c2c2c;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 150%;
+  cursor: pointer;
+}
+
+/* hero Pavlo Styles */
+.hero-section {
+  display: flex;
+  background: #fefefe;
+}
+
+.container-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container.hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-title {
+  color: #2c2c2c;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 28px;
+  max-width: 511px;
+}
+
+.hero-description {
+  color: #2c2c2c;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 40px;
+  max-width: 511px;
+}
+
+.hero-decoration-img {
+  width: 580px;
+  height: 580px;
+  flex-shrink: 0;
+  border-radius: 580px;
+  border: 26px solid #ffe550;
+  background: #fefefe;
+}
