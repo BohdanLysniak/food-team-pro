@@ -46,8 +46,63 @@ body {
   margin: 0 auto;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.1);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.link-nav {
+  color: var(--Black, #2c2c2c);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: color 250ms ease-in-out;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.link-nav:hover,
+.link-nav:focus {
+  color: #bbf330;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+
+.btn-nav {
+  margin-left: 30px;
+  display: inline-flex;
+  padding: 6px 18px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background: var(--Button-green, #bbf330);
+  border: none;
+  color: var(--Black, #2c2c2c);
+  text-align: right;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
 .favorites-food {
-  background: var(--White, #FEFEFE);
+  background: var(--White, #fefefe);
 }
 
 /* Button */
@@ -119,33 +174,33 @@ button {
 }
 
 .favorites-food-title {
-  color: var(--Black, #2C2C2C);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  color: var(--Black, #2c2c2c);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .favorites-food-paragraph {
-  color: var(--Black, #2C2C2C);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  color: var(--Black, #2c2c2c);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .food-list {
   display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .food-list-item {
   border-radius: 197px;
-    border: 16px solid var(--Yellow-main, #FFE550);
-    background: var(--White, #FEFEFE);
+  border: 16px solid var(--Yellow-main, #ffe550);
+  background: var(--White, #fefefe);
 }
