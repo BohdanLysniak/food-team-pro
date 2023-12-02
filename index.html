@@ -42,7 +42,7 @@
             </li>
           </ul>
         </nav>
-        <button class="btn-nav" type="button">Order Now</button>
+        <button class="btn-nav" type="button" data-modal-open>Order Now</button>
       </div>
     </header>
     <main>
@@ -135,9 +135,9 @@
     </main>
     <!-- footer Uliana-->
     <!-- modal Anna -->
-    <div class="modal-page-backdrop">
+    <div class="modal-page-backdrop is-hidden" data-modal>
       <div class="modal-page-content">
-        <button type="button" class="modal-close-btn">
+        <button type="button" class="modal-close-btn" data-modal-close>
           <svg
             class="modal-close-icon"
             width="24"
@@ -187,5 +187,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
