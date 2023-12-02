@@ -120,32 +120,197 @@ button {
 
 .favorites-food-title {
   color: var(--Black, #2C2C2C);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
+
 .favorites-food-paragraph {
   color: var(--Black, #2C2C2C);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .food-list {
   display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .food-list-item {
   border-radius: 197px;
-    border: 16px solid var(--Yellow-main, #FFE550);
-    background: var(--White, #FEFEFE);
+  border: 16px solid var(--Yellow-main, #FFE550);
+  background: var(--White, #FEFEFE);
+}
+
+
+/* ==========MODAL PAGE============= */
+
+input,
+textarea,
+button {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+
+.modal-page-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(94, 99, 99, 0.70);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms linear,
+    visibility 250ms linear;
+}
+
+.modal-page-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal-page-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  background-color: #FFE550;
+  padding: 32px;
+  width: 458px;
+  min-height: 449px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+  transition: transform 250ms linear;
+  box-sizing: border-box;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 0;
+  line-height: 0;
+  background-color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  transition: background-color 250ms linear;
+}
+
+.modal-close-icon {
+  fill: #2c2c2c;
+  transition: fill 250ms linear;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #BBF330;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus .modal-close-icon {
+  fill: #ffffff;
+}
+
+.modal-page-title {
+  color: #2C2C2C;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-form-item-container {
+  margin-bottom: 24px;
+  display: block;
+}
+
+.last {
+  margin-bottom: 32px;
+}
+
+.modal-form-input-label {
+  color: #2C2C2C;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-left: 12px;
+  margin-bottom: 2px;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: 1px solid rgba(18, 18, 18, 0.12);
+  background-color: #FFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;
+  color: #2C2C2C;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  padding: 12px 14px;
+  outline: 0px solid transparent;
+  transition: border-color 250ms linear;
+  box-sizing: border-box;
+}
+
+.modal-form-input::placeholder {
+  color: #C4C4C4;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.modal-form-input:focus-within {
+  border-color: #7EB101;
+}
+
+.modal-form-button {
+  display: flex;
+  width: 106px;
+  padding: 10px 0px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  transition: background-color 250ms linear;
+  border-radius: 30px;
+  border: 2px solid #7EB101;
+  background-color: #FFF;
+  color: #2C2C2C;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.modal-form-button:hover,
+.modal-form-button:focus {
+  background-color: #BBF330;
 }

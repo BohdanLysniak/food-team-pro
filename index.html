@@ -38,23 +38,29 @@
     </header>
     <main>
       <!-- hero Pavlo -->
-       <section class="hero-section">
-      <div class="container hero">
-        <div class="container-hero">
-          <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
-          <p class="hero-description">
-            With just a few clicks, you can have your favorite meals delivered
-            straight to your doorstep, no matter where you are. Order now and
-            enjoy a hassle-free and delicious meal from the comfort of your own
-            home.
-          </p>
-          <button class="hero-button" type="button">Order Now</button>
+      <section class="hero-section">
+        <div class="container hero">
+          <div class="container-hero">
+            <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+            <p class="hero-description">
+              With just a few clicks, you can have your favorite meals delivered
+              straight to your doorstep, no matter where you are. Order now and
+              enjoy a hassle-free and delicious meal from the comfort of your
+              own home.
+            </p>
+            <button class="hero-button" type="button">Order Now</button>
+          </div>
+          <div class="hero-decoration-img">
+            <img
+              class="hero-img"
+              src="./images/hero.png"
+              alt="salat"
+              width="528"
+              height="528"
+            />
+          </div>
         </div>
-        <div class="hero-decoration-img">
-          <img class="hero-img" src="./images/hero.png" alt="salat" width="528" height="528" />
-        </div>
-      </div>
-    </section>
+      </section>
       <!-- offerings Lisa -->
       <!-- favorites Viktor -->
       <section class="favorites-food">
@@ -120,5 +126,57 @@
     </main>
     <!-- footer Uliana-->
     <!-- modal Anna -->
+    <div class="modal-page-backdrop is-open">
+      <div class="modal-page-content">
+        <button type="button" class="modal-close-btn">
+          <svg
+            class="modal-close-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 30 32"
+          >
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <p class="modal-page-title">Order Form</p>
+        <form class="modal-form" name="submit-form" autocomplete="off">
+          <div class="modal-form-item-container">
+            <label class="modal-form-input-label" for="user-name">Name</label>
+            <input
+              class="modal-form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Your name"
+            />
+          </div>
+          <div class="modal-form-item-container">
+            <label class="modal-form-input-label" for="user-phone"
+              >Phone number</label
+            >
+            <input
+              class="modal-form-input"
+              type="tel"
+              name="user-phone"
+              id="user-phone"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            />
+          </div>
+          <div class="modal-form-item-container last">
+            <label class="modal-form-input-label" for="user-email"
+              >E-mail</label
+            >
+            <input
+              class="modal-form-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="example@gmail.com"
+            />
+          </div>
+          <button class="modal-form-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
