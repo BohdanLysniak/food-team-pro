@@ -45,3 +45,49 @@ body {
   padding: 0 16px;
   margin: 0 auto;
 }
+
+.fifth-section {
+  padding-top: 222px;
+  padding-bottom: 201px;
+}
+
+.fifth-section-title {
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.fifth-section-text {
+  max-width: 532px;
+  margin-bottom: 24px;
+}
+
+.email-form {
+  border-radius: 30px;
+  border: 0.854px solid #FFE550;
+  padding: 12px 57px 12px 12px;
+  color: #505050;
+  font-size: 12px;
+  width: 395px;
+}
+
+.subscribe-button {
+  width: 103px;
+  height: 42px;
+  background-color: #BBF330;
+  border: none;
+  border-radius: 30px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 32px;
+}
+
+.fifth-section {
+  display: flex;
+  align-items: center;
+}
