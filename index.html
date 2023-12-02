@@ -21,10 +21,115 @@
   </head>
   <body>
     <!-- header Lena -->
+    <header class="header">
+      <div class="container header-container">
+        <a class="logo" href="./index.html">
+          <img src="./images/logo.jpg" alt="FoodStop" width="66" height="52" />
+        </a>
+
+        <nav class="nav">
+          <ul class="menu-nav">
+            <li class="menu-items-nav"><a class="link-nav" href="">Home</a></li>
+            <li class="menu-items-nav">
+              <a class="link-nav" href="">About</a>
+            </li>
+            <li class="menu-items-nav">
+              <a class="link-nav" href="">Service</a>
+            </li>
+            <li class="menu-items-nav"><a class="link-nav" href="">Menu</a></li>
+            <li class="menu-items-nav">
+              <a class="link-nav" href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-nav" type="button" data-modal-open>Order Now</button>
+      </div>
+    </header>
     <main>
-      <!-- hero Pasha -->
+      <!-- hero Pavlo -->
+      <section class="hero-section">
+        <div class="container hero">
+          <div class="container-hero">
+            <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+            <p class="hero-description">
+              With just a few clicks, you can have your favorite meals delivered
+              straight to your doorstep, no matter where you are. Order now and
+              enjoy a hassle-free and delicious meal from the comfort of your
+              own home.
+            </p>
+            <button class="hero-button" type="button">Order Now</button>
+          </div>
+          <div class="hero-decoration-img">
+            <img
+              class="hero-img"
+              src="./images/hero.png"
+              alt="salat"
+              width="528"
+              height="528"
+            />
+          </div>
+        </div>
+      </section>
       <!-- offerings Lisa -->
-      <!-- favorites Vitia -->
+      <!-- favorites Viktor -->
+      <section class="favorites-food">
+        <div class="container">
+          <h2 class="favorites-food-title">Some of Our Favorites</h2>
+          <p class="favorites-food-paragraph">
+            Looking for something delicious?
+          </p>
+          <ul class="food-list">
+            <li class="food-list-item">
+              <img
+                src="./images/favorites-img/gamburger.png"
+                alt="gamburger"
+                width="315"
+                height="315"
+              />
+            </li>
+            <li class="food-list-item">
+              <img
+                src="./images/favorites-img/Pasta.png"
+                alt="Pasta"
+                width="315"
+                height="315"
+              />
+            </li>
+            <li class="food-list-item">
+              <img
+                src="./images/favorites-img/pizza.png"
+                alt="pizza"
+                width="315"
+                height="315"
+              />
+            </li>
+            <li class="food-list-item">
+              <img
+                src="./images/favorites-img/chicken.png"
+                alt="chicken"
+                width="315"
+                height="315"
+              />
+            </li>
+            <li class="food-list-item">
+              <img
+                src="./images/favorites-img/salat.png"
+                alt="salat"
+                width="315"
+                height="315"
+              />
+            </li>
+            <li class="food-list-item">
+              <img
+                src="./images/favorites-img/borshch.png"
+                alt="borshch"
+                width="315"
+                height="315"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
       <!-- customers Marina -->
       <!-- subscribes Anastasia-->
       <section class="container fifth-section">
@@ -43,5 +148,58 @@
     </main>
     <!-- footer Uliana-->
     <!-- modal Anna -->
+    <div class="modal-page-backdrop is-hidden" data-modal>
+      <div class="modal-page-content">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg
+            class="modal-close-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 30 32"
+          >
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <p class="modal-page-title">Order Form</p>
+        <form class="modal-form" name="submit-form" autocomplete="off">
+          <div class="modal-form-item-container">
+            <label class="modal-form-input-label" for="user-name">Name</label>
+            <input
+              class="modal-form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Your name"
+            />
+          </div>
+          <div class="modal-form-item-container">
+            <label class="modal-form-input-label" for="user-phone"
+              >Phone number</label
+            >
+            <input
+              class="modal-form-input"
+              type="tel"
+              name="user-phone"
+              id="user-phone"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            />
+          </div>
+          <div class="modal-form-item-container last">
+            <label class="modal-form-input-label" for="user-email"
+              >E-mail</label
+            >
+            <input
+              class="modal-form-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="example@gmail.com"
+            />
+          </div>
+          <button class="modal-form-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
