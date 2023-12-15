@@ -93,6 +93,11 @@ body {
   background-position: bottom;
 }
 
+.footer-container {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
 .footer-navigation {
   display: flex;
   align-items: center;
@@ -196,6 +201,12 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+
+.footer-link-button {
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu-footer-link-button {
