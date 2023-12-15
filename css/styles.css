@@ -47,37 +47,181 @@ body {
 }
 
 .favorites-food {
-  background: var(--White, #FEFEFE);
+  background: var(--White, #fefefe);
 }
 
 .favorites-food-title {
-  color: var(--Black, #2C2C2C);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  color: var(--Black, #2c2c2c);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .favorites-food-paragraph {
-  color: var(--Black, #2C2C2C);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  color: var(--Black, #2c2c2c);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .food-list {
   display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .food-list-item {
   border-radius: 197px;
-    border: 16px solid var(--Yellow-main, #FFE550);
-    background: var(--White, #FEFEFE);
+  border: 16px solid var(--Yellow-main, #ffe550);
+  background: var(--White, #fefefe);
+}
+
+/* footer */
+
+.footer-section {
+  padding: 100px 0;
+  background-color: #ffffff;
+  box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
+  background-image: url(../images/footer.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.footer-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo-footer {
+  margin-right: 148px;
+}
+
+.menu-footer {
+  display: flex;
+  gap: 28px;
+  padding-left: 0;
+  margin: 0;
+}
+
+.menu-footer-link {
+  display: flex;
+  color: #2c2c2c;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.subscribe {
+}
+
+.footer-subscribe {
+  color: #2c2c2c;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.form {
+  display: flex;
+  gap: 13px;
+}
+
+.form-label {
+  color: var(--Neutral-Dark-gray, #505050);
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  display: block;
+}
+
+.form-input {
+  padding-left: 12px;
+  border: 0.854px solid #ffe550;
+  background-color: #ffffff;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #2c2c2c;
+  width: 279px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.form-input:focus {
+  fill: 0.854px solid #7eb101;
+}
+
+.footer-button {
+  min-width: 103px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #2c2c2c;
+  border-radius: 30px;
+  border: 0.854px solid #7eb101;
+  background-color: #ffffff;
+  align-items: center;
+}
+
+.footer-button:hover,
+.footer-button:focus {
+  border: 2px solid #ffe450;
+}
+
+.accent-color {
+  color: #7eb101;
+  text-decoration: underline;
+}
+
+.submit-describe {
+  color: #2c2c2c;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menu-footer-link-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer-link {
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+  margin: 0;
+}
+
+.footer-paragraph {
+  color: #2c2c2c;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menu-footer-link-button {
+  display: flex;
+  justify-content: space-between;
 }
