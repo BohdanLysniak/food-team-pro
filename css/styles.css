@@ -41,11 +41,11 @@ body {
 }
 
 .container {
-  width: 1280px;
+  width: 100%;
+  max-width: 1280px;
   padding: 0 16px;
   margin: 0 auto;
 }
-
 
 .header {
   box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.1);
@@ -113,33 +113,41 @@ button {
 
 .hero-button {
   display: block;
-  width: 98px;
-  height: 32px;
+  width: 106px;
+  height: 40px;
   border-radius: 30px;
-  border: none;
-  background-color: #bbf330;
+  border: 2px solid var(--Dark-green, #7eb101);
+  background-color: transparent;
   color: #2c2c2c;
   font-size: 13px;
   font-weight: 500;
-  line-height: 150%;
+  line-height: 1.5;
   cursor: pointer;
+}
+
+.hero-button:hover {
+  background-color: #bbf330;
+  border: 2px solid var(--Dark-green, #bbf330);
 }
 
 /* hero Pavlo Styles */
 .hero-section {
-  display: flex;
-  background: #fefefe;
+  background-color: #fefefe;
+  padding-top: 14px;
 }
 
-.container-hero {
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 143px; */
+}
+
+.hero-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.container.hero {
-  display: flex;
-  justify-content: space-between;
+  max-width: 511px;
 }
 
 .hero-title {
@@ -160,6 +168,31 @@ button {
   max-width: 511px;
 }
 
+/* Carousel; */
+.carousel-button {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 40px;
+  padding: 0;
+  fill: #2c2c2c;
+  background-color: #fefefe;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
+}
+
+.carousel-button:hover {
+  fill: #7eb101;
+}
+
+.carousel-button:active {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.16));
+}
+
 .hero-decoration-img {
   display: flex;
   width: 580px;
@@ -168,6 +201,10 @@ button {
   border-radius: 580px;
   border: 26px solid #ffe550;
   background: #fefefe;
+}
+
+.hero-list {
+  display: flex;
 }
 
 .hero-img {
@@ -368,7 +405,6 @@ button {
 .modal-form-button:hover,
 .modal-form-button:focus {
   background-color: #bbf330;
-
 }
 .fifth-section {
   padding-top: 222px;
@@ -389,7 +425,7 @@ button {
 
 .email-form {
   border-radius: 30px;
-  border: 0.854px solid #FFE550;
+  border: 0.854px solid #ffe550;
   padding: 12px 57px 12px 12px;
   color: #505050;
   font-size: 12px;
@@ -399,7 +435,7 @@ button {
 .subscribe-button {
   width: 103px;
   height: 42px;
-  background-color: #BBF330;
+  background-color: #bbf330;
   border: none;
   border-radius: 30px;
   font-size: 13px;
