@@ -1,3 +1,8 @@
+/* Додавання курсора при наведенні на кнопки */
+button {
+  cursor: pointer;
+}
+
 /* Стилі для обнулення верхніх відступів у елементів */
 h1,
 h2,
@@ -45,7 +50,6 @@ body {
   padding: 0 16px;
   margin: 0 auto;
 }
-
 
 .header {
   box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.1);
@@ -368,7 +372,6 @@ button {
 .modal-form-button:hover,
 .modal-form-button:focus {
   background-color: #bbf330;
-
 }
 .fifth-section {
   padding-top: 222px;
@@ -389,7 +392,7 @@ button {
 
 .email-form {
   border-radius: 30px;
-  border: 0.854px solid #FFE550;
+  border: 0.854px solid #ffe550;
   padding: 12px 57px 12px 12px;
   color: #505050;
   font-size: 12px;
@@ -399,7 +402,7 @@ button {
 .subscribe-button {
   width: 103px;
   height: 42px;
-  background-color: #BBF330;
+  background-color: #bbf330;
   border: none;
   border-radius: 30px;
   font-size: 13px;
@@ -415,3 +418,257 @@ button {
   display: flex;
   align-items: center;
 }
+
+/* == Our Offerings Lisa == */
+
+.our-offerings-section {
+  background-color: #ffe550;
+}
+
+.our-offerings-section .container {
+  max-width: 310px;
+  padding-top: 60px;
+  padding-bottom: 66px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image-border-wrapper {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  margin-bottom: 60px;
+}
+
+.image-round-wrapper {
+  position: absolute;
+  width: 256px;
+  height: 256px;
+  background-color: #fefefe;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-wrapper {
+  position: absolute;
+  z-index: 2;
+  bottom: 41px;
+  left: 30px;
+}
+
+.our-offerings-heading {
+  width: 280px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 28px;
+}
+
+.our-offerings-paragraph {
+  width: 280px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 28px;
+}
+
+.our-offerings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.our-offerings-list-icon {
+  fill: #7eb101;
+}
+
+.our-offerings-list-heading {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+.our-offerings-list-paragraph {
+  width: 280px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.order-button-wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+.our-offerings-order-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 106px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 10px 22px;
+  background-color: #fff;
+  border: 2px solid #7eb101;
+  border-radius: 30px;
+  transition: background-color 250ms linear, border-color 250ms linear;
+}
+
+.our-offerings-order-button:hover,
+.our-offerings-order-button:focus {
+  background-color: #bbf330;
+  border-color: #bbf330;
+}
+
+.our-offerings-read-more-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  min-width: 83px;
+  color: #000;
+  font-size: 13.667px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: transparent;
+  border: none;
+}
+
+.our-offerings-read-more-button-icon {
+  fill: #000;
+}
+
+/* ===== / MOBILE ===== */
+
+/* ===== TABLET ===== */
+
+@media screen and (min-width: 768px) {
+  .our-offerings-section .container {
+    min-width: 734px;
+    padding-top: 40px;
+    padding-bottom: 94px;
+  }
+
+  .image-border-wrapper {
+    width: 357px;
+    height: 357px;
+  }
+
+  .image-round-wrapper {
+    width: 326px;
+    height: 326px;
+  }
+
+  .image-wrapper {
+    position: absolute;
+    bottom: 53px;
+    left: 38px;
+  }
+
+  .our-offerings-heading {
+    width: 526px;
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+
+  .our-offerings-paragraph {
+    width: 500px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
+
+  .our-offerings-list {
+    flex-direction: row;
+    gap: 80px;
+    margin-bottom: 20px;
+  }
+
+  .our-offerings-list-item:first-child > .our-offerings-list-paragraph {
+    width: 288px;
+  }
+
+  .our-offerings-list-item:last-child > .our-offerings-list-paragraph {
+    width: 252px;
+  }
+}
+
+/* ===== / TABLET ===== */
+
+/* ===== DESKTOP ===== */
+
+@media screen and (min-width: 1248px) {
+  .our-offerings-section .container {
+    display: flex;
+    gap: 90px;
+    max-width: 1248px;
+    padding-top: 167px;
+    padding-bottom: 124px;
+  }
+
+  .image-border-wrapper {
+    width: 550px;
+    height: 550px;
+  }
+
+  .image-round-wrapper {
+    width: 502px;
+    height: 502px;
+  }
+
+  .image-wrapper {
+    position: absolute;
+    z-index: 2;
+    bottom: 78px;
+    left: 60px;
+  }
+
+  .our-offerings-heading {
+    line-height: 1.2;
+  }
+
+  .our-offerings-paragraph {
+    margin-bottom: 40px;
+  }
+
+  .our-offerings-list {
+    gap: 67px;
+    margin-bottom: 32px;
+  }
+
+  .our-offerings-list-item:first-child > .our-offerings-list-paragraph {
+    width: 253px;
+  }
+
+  .our-offerings-list-item:last-child > .our-offerings-list-paragraph {
+    width: 253px;
+  }
+
+  .our-offerings-read-more-button {
+    display: none;
+  }
+}
+
+/* ===== / DESKTOP ===== */
+
+/* == / Our Offerings == */
