@@ -84,6 +84,11 @@ body {
 
 /* footer */
 
+.footer-navigation-subscribe{
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer-section {
   padding: 100px 0;
   background-color: #ffffff;
@@ -133,6 +138,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
+  padding-bottom: 12px
 }
 
 .form {
@@ -162,6 +168,7 @@ body {
   width: 279px;
   height: 42px;
   flex-shrink: 0;
+  margin-bottom: 12px;
 }
 
 .form-input:focus {
@@ -207,6 +214,7 @@ body {
 .footer-link-button {
   display: flex;
   justify-content: space-between;
+  padding-top: 80px;
 }
 
 .menu-footer-link-button {
